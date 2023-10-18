@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --green-color: #185E3F; /* Define your primary color */
+    --grey-color: #545F5B; /* Define your secondary color */
+    --background-color: #fff; /* Define your background color */
+    --brown-color: #8B0000; /* Define your button background color */
+    --secondary-blue: #0057E1; /* Define your button text color */
+  }
+
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    overflow-y: auto;
+}
+
+/* About Section */
+.course-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.course-wrapper button.back-button {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+    margin-top: 10px; /* Add margin to separate the button */
+    margin-right: 200px;
+}
+
+.content-wrapper h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--brown-color);
+}
+
+.course-heading {
+    text-align: center;
+}
+
+.course-info h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--green-color);
+}
+
+.course-info li {
+    font-size: 21px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.side1 {
+    text-align: left;
+}
+
+.side2 {
+    text-align: left;
+}
+
+.course-info button.booking-button {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate the button */
+}
+
+.course-info button.booking-button::after {
+    margin-left: 5px;
+}

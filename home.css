@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --green-color: #185E3F; /* Define your primary color */
+    --grey-color: #545F5B; /* Define your secondary color */
+    --background-color: #fff; /* Define your background color */
+    --brown-color: #8B0000; /* Define your button background color */
+    --secondary-blue: #0057E1; /* Define your button text color */
+  }
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.photo {
+    width: 45%; /* Adjust the width as needed */
+    border-top-left-radius: 50% 25px;
+    border-top-right-radius: 50% 25px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: var(--green-color);
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content button {
+    background-color: var(--grey-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-wrapper h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--green-color);
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about p {
+    font-size: 21px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.p1 {
+    text-align: left;
+}
+
+.p2 {
+    text-align: left;
+}
+
+.about button.arrow-button {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate the button */
+}
+
+.about button.arrow-button::after {
+    content: "\2192"; /* Unicode arrow character (right arrow) */
+    margin-left: 5px;
+}

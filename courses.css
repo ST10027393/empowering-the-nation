@@ -1,0 +1,53 @@
+:root {
+    --green-color: #185E3F; /* Define your primary color */
+    --grey-color: #545F5B; /* Define your secondary color */
+    --background-color: #fff; /* Define your background color */
+    --brown-color: #8B0000; /* Define your button background color */
+    --secondary-blue: #0057E1; /* Define your button text color */
+  }
+
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    overflow-y: auto;
+}
+
+  .container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.parahraph p{
+    font-size: 22px;
+    text-align: center;
+}
+
+.course-heading h2 {
+    font-size: 40px;
+    color: var(--brown-color);
+}
+
+.link-button {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate the button */
+}
+
+.six-months {
+    justify-content: flex-start; /* Align content to the left */
+}
+
+.six-weeks {
+    justify-content: flex-start; /* Align content to the left */
+}

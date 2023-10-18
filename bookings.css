@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --green-color: #185E3F; /* Define your primary color */
+    --grey-color: #545F5B; /* Define your secondary color */
+    --background-color: #fff; /* Define your background color */
+    --brown-color: #8B0000; /* Define your button background color */
+    --secondary-blue: #0057E1; /* Define your button text color */
+  }
+  
+
+.container {
+    margin-top: 50%;
+}
+
+/* First Section */
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+button{
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--brown-color);
+}
+
+button:active {
+    background-color: var(--brown-color);
+}
+
+h1 {
+    font-size: 56px;
+    color: var(--green-color);
+    text-align: center;
+}
+
+/*Second Section */
+.second {
+    text-align: center;
+}
+
+/* Third Section */
+.courses {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.third h2 {
+    font-size: 40px;
+    color: var(--brown-color);
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--grey-color);
+    width: 350px;
+    margin-right: 5px;
+}
+
+.product-details:hover {
+    transform: scale(1.05); /* Increase the size by 5% */
+    transition: transform 0.2s ease;
+}
+
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+.product-description {
+    margin-top: 10px;
+}
+
+.price {
+    text-align: center;
+}

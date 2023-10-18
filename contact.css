@@ -1,0 +1,123 @@
+:root {
+    --green-color: #185E3F; /* Define your primary color */
+    --grey-color: #545F5B; /* Define your secondary color */
+    --background-color: #fff; /* Define your background color */
+    --brown-color: #8B0000; /* Define your button background color */
+    --secondary-blue: #0057E1; /* Define your button text color */
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 56px;
+    color: var(--green-color);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change from row to column direction */
+    margin-top: 75%; /*adjust this margin if the your content disappears again */
+}
+
+/* contact info */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.info {
+    width: 100%; /* Adjust the width as needed */
+    flex: 1; /* Distribute available space evenly among the three sections */
+    text-align: center; /* Optional: Center content within each section */
+}
+
+.inline-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.info h2 {
+    margin-top: 0;
+    color: var(--brown-color);
+}
+
+/* Contact form */
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    text-align: left; /* Align text to the left */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the maximum width to make the form smaller */
+    margin: 0 auto; /* Center the form horizontally within the container */
+}
+
+.contact label {
+    font-size: 18px;
+    color: var(--green-color);
+    margin-bottom: 10px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Reduce the margin for a smaller form */
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact input[type="submit"] {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--brown-color);
+}
+
+/* Map */
+.contact-map {
+    text-align: left; /* Align text to the left */
+    margin-top: 50px;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
