@@ -1,98 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bookings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <header class="fixed-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Assests\logo.jpeg" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="bookings.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="first">
+                <div>
+                    <button class="course-button back-button" id="back-button">Back</button>
+                </div>
+                <div>
+                    <h1>Bookings</h1>
+                </div>
+            </section>
+            <section class="second">
+                <h2>Hi, welcome to our bookings page.</h2>
+                <p>Please select the course you would like to study.</p>
+            </section>
+            <section class="third">
+                <h2> Six Months Courses</h2>
+                <div class="courses">
+                    <div class="product-details">
+                        <h3 class="product-title">First Aid</h3>
+                        <p class="product-description">Purpose:  To provide first aid awareness and basic life support   </p>
+                        <p><strong>Price:</strong> R1500</p>
+                        <button class="course-select" data-price="1500">Select</button>
+                    </div>
+                    
+                    <div class="product-details">
+                        <h3 class="product-title">Sewing</h3>
+                        <p class="product-description">Purpose:  To provide alterations and new garment tailoring services   </p>
+                        <p><strong>Price:</strong> R1500</p>
+                        <button class="course-select" data-price="1500">Select</button>
+                    </div>
+    
+                    <div class="product-details">
+                        <h3 class="product-title">Life Skills</h3>
+                        <p class="product-description">Purpose: To provide skills to navigate basic life necessities  </p>
+                        <p><strong>Price:</strong> R1500</p>
+                        <button class="course-select" data-price="1500">Select</button>
+                    </div>
+                    
+                    <div class="product-details">
+                        <h3 class="product-title">Landscaping</h3>
+                        <p class="product-description">Purpose:  To provide landscaping services for new and established gardens  </p>
+                        <p><strong>Price:</strong> R1500</p>
+                        <button class="course-select" data-price="1500">Select</button>
+                    </div>
+                </div>
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+                <h2> Six Week Courses</h2>
+                <div class="courses">
+                    <div class="product-details">
+                        <h3 class="product-title">Child Minding</h3>
+                        <p class="product-description">Purpose: To provide basic child and baby care</p>
+                        <p><strong>Price:</strong> R750</p>
+                        <button class="course-select" data-price="750">Select</button>
+                    </div>
 
-:root {
-    --green-color: #185E3F; /* Define your primary color */
-    --grey-color: #545F5B; /* Define your secondary color */
-    --background-color: #fff; /* Define your background color */
-    --brown-color: #8B0000; /* Define your button background color */
-    --secondary-blue: #0057E1; /* Define your button text color */
-  }
-  
+                    
+                    <div class="product-details">
+                        <h3 class="product-title">Garden Maintainance</h3>
+                        <p class="product-description">Purpose: To provide basic knowledge of watering, 
+                            pruning and planting in a domestic garden.
+                        </p>
+                        <p><strong>Price:</strong> R750</p>
+                        <button class="course-select" data-price="750">Select</button>
+                    </div>
 
-.container {
-    margin-top: 50%;
-}
+                    <div class="product-details">
+                        <h3 class="product-title">Cooking</h3>
+                        <p class="product-description">Purpose: To prepare and cook nutritious family meals
+                                </p>
+                        <p><strong>Price:</strong> R750</p>
+                        <button class="course-select" data-price="750">Select</button>
+                    </div>
+                </div>
+    
+                <div class="price">
+                    <h3> Ready for your first lesson</h3>
+                    <h3> Calculate your Cost or Book an Appointment.</h3>
+                    <button id="calculate-button">COST</button>
+                    <a href="consult.html">
+                        <button>Book</button>
+                    </a>
+                </div>
+                <div id="total-cost" style="display: none;">
+                    <h3>Total Cost (Courses Combined): <span id="calculated-cost">0.00</span> ZAR</h3>
+                    <h3>VAT (15%): <span id="vat-amount">0.00</span> ZAR</h3>
+                    <h3>Discount: <span id="discount-amount">0.00</span> ZAR</h3>
+                    <h3>Total Cost (VAT Inclusive): <span id="total-cost-inclusive">0.00</span> ZAR</h3>
+                </div>
+            </section>
+        </div>
+    </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="bookings.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2023 Empowering the Nation. All rights reserved. Designed by DigitalScape Creations</p>
+            </div>
+        </footer>
+    </div>
 
-/* First Section */
-.first {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-}
+    <script>
+        const courseSelectButtons = document.querySelectorAll('.course-select');
+        const calculateButton = document.getElementById('calculate-button');
+        const totalCostDiv = document.getElementById('total-cost');
+        const calculatedCost = document.getElementById('calculated-cost');
+        const discountAmount = document.getElementById('discount-amount');
+        const vatAmount = document.getElementById('vat-amount');
+        const totalCostInclusive = document.getElementById('total-cost-inclusive');
 
-button{
-    background-color: var(--green-color);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-}
+        const selectedCourses = [];
 
-button:hover {
-    background-color: var(--brown-color);
-}
+        courseSelectButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const price = parseFloat(button.getAttribute('data-price'));
+                selectedCourses.push(price);
+                button.setAttribute('disabled', 'true');
+                button.classList.add('selected-course'); // Add the class to the selected button
+            });
+        });
 
-button:active {
-    background-color: var(--brown-color);
-}
+        calculateButton.addEventListener('click', () => {
+            const totalCost = selectedCourses.reduce((acc, price) => acc + price, 0);
+            let discount = 0;
+            if (selectedCourses.length === 2) {
+                discount = totalCost * 0.05;
+            } else if (selectedCourses.length === 3) {
+                discount = totalCost * 0.1;
+            } else if (selectedCourses.length > 3) {
+                discount = totalCost * 0.15;
+            }
+            const discountedCost = totalCost - discount;
+            const vat = discountedCost * 0.15;
+            const totalCostWithVAT = discountedCost + vat;
 
-h1 {
-    font-size: 56px;
-    color: var(--green-color);
-    text-align: center;
-}
+            calculatedCost.textContent = totalCost.toFixed(2);
+            discountAmount.textContent = discount.toFixed(2);
+            vatAmount.textContent = vat.toFixed(2);
+            totalCostInclusive.textContent = totalCostWithVAT.toFixed(2);
 
-/*Second Section */
-.second {
-    text-align: center;
-}
+            totalCostDiv.style.display = 'block';
+        });
 
-/* Third Section */
-.courses {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-}
+        const backButton = document.getElementById('back-button');
 
-.third h2 {
-    font-size: 40px;
-    color: var(--brown-color);
-}
-
-.product-details {
-    flex: 1;
-    padding: 20px;
-    background-color: var(--grey-color);
-    width: 350px;
-    margin-right: 5px;
-}
-
-.product-details:hover {
-    transform: scale(1.05); /* Increase the size by 5% */
-    transition: transform 0.2s ease;
-}
-
-
-.product-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--green-color);
-}
-
-.product-description {
-    margin-top: 10px;
-}
-
-.price {
-    text-align: center;
-}
+        backButton.addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
