@@ -17,9 +17,45 @@
     overflow-y: auto;
 }
 
+
+.pagewrapper {
+    width: 100%;
+}
+
   .container {
     margin-top: 150px;
     margin-bottom: 150px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+button{
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--brown-color);
+}
+
+button:active {
+    background-color: var(--brown-color);
+}
+
+h1 {
+    font-size: 56px;
+    color: var(--green-color);
+    text-align: center;
 }
 
 .parahraph p{
@@ -42,6 +78,14 @@
     cursor: pointer;
     align-items: center;
     margin-top: 10px; /* Add margin to separate the button */
+}
+
+.link-button:hover {
+    background-color: var(--brown-color);
+}
+
+.paragraph p{
+    text-align: center;
 }
 
 .six-months {
