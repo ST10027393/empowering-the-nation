@@ -26,12 +26,37 @@
     overflow-y: auto;
 }
 
+.pagewrapper {
+    width: 100%;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+button{
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--brown-color);
+}
 /* About Section */
 .course-info {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
+    width: 70%;
 }
 
 .course-wrapper button.back-button {
@@ -48,7 +73,7 @@
     margin-right: 200px;
 }
 
-.content-wrapper h1 {
+h1 {
     font-size: 60px;
     margin-bottom: 10px;
     text-align: center;
