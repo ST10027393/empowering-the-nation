@@ -27,11 +27,19 @@
             </nav>
         </header>
         <div class="container">
+            <section class="first">
+                <div>
+                    <button class="course-button back-button" id="back-button">Back</button>
+                </div>
+                <div>
+                    <h1>Courses</h1>
+                </div>
+            </section>
             <section class="paragraph">
                 <p>We offer a variety of 6 month<br>
                      and 6 week courses, by<br>
-                      selecting the clicking on the<br>
-                       below course you will receive<br>
+                      clicking on the below<br>
+                        course you will receive<br>
                         further information on it.
                 </p>
             </section>
@@ -40,10 +48,10 @@
                     <h2>6 Month Courses</h2>
                 </div>
                 <div class="course-buttons">
-                    <button class="link-button">First Aid</button>
-                    <button class="link-button">Sewing</button>
-                    <button class="link-button">Landscaping</button>
-                    <button class="link-button">Life Skills</button>
+                    <a href="firstaid.html"><button class="link-button">First Aid</button></a>
+                    <a href="sewing.html"><button class="link-button">Sewing</button></a>
+                    <a href="landscape.html"><button class="link-button">Landscaping</button></a>
+                    <a href="lifeskills.html"><button class="link-button">Life Skills</button></a>
                 </div>
             </section>
             <section class="six-weeks">
@@ -51,9 +59,9 @@
                     <h2>6 Week Courses</h2>
                 </div>
                 <div class="course-buttons">
-                    <button class="link-button">Child Minding</button>
-                    <button class="link-button">Cooking</button>
-                    <button class="link-button">Garden Maintenance</button>
+                    <a href="childminding.html"><button class="link-button">Child Minding</button></a>
+                    <a href="cooking.html"><button class="link-button">Cooking</button></a>
+                    <a href="garden.html"><button class="link-button">Garden Maintenance</button></a>
                 </div>
             </section>
         </div>
@@ -71,5 +79,12 @@
             </div>
         </footer>
     </div>
+    <script>
+        const backButton = document.getElementById('back-button');
+
+        backButton.addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
 </body>
 </html>
