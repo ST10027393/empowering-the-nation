@@ -28,19 +28,27 @@
             </nav>
         </header>     
         <div class="container">
-            <h1 class="heading">Contact Us</h1>
+            <section class="first">
+                <div>
+                    <button class="course-button back-button" id="back-button">Back</button>
+                </div>
+                <div>
+                    <h1 class="heading">Contact Us</h1>
+                </div>
+            </section>
             <section class="1 contact-info">
                 <div class="info">
                     <h2>Contact details</h2>
                     <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
                     <p>Email: <a href="empoweringthenations@gmail.com">empoweringthenations@gmail.com</a></p>
-                    <p>Website: <a href="https://empoweringnations.org/">empoweringnations.org/</a></p>
+                    <p>Website: <a href="index.html">empoweringnations.org/</a></p>
                 </div>
                 <div class="info">
-                    <h2>Address</h2>
-                    <p>500 Terry Francine St.</p>
-                    <p>San Francisco, CA 94158</p>  
+                    <h2>Address</h2> 
+                    <p>1 Link Rd, Dawncliffe.</p> 
+                    <p> Westville, 3629</p>
                 </div>
+               <!--
                 <div class="info">
                     <h2>Opening Hours</h2>
                     <ul class="inline-list">
@@ -49,6 +57,7 @@
                         <li>Sunday: 9:00 am – 9:00 pm</li>
                     </ul>
                 </div>
+                -->
             </section>
 
             <section class="second">
@@ -90,6 +99,58 @@
             </div>  
         </footer>
     </div>
+    <script>
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const form = document.querySelector('form');
+
+        // Code to clear initial values when clicked
+        nameInput.addEventListener('click', clearInitialValue);
+        emailInput.addEventListener('click', clearInitialValue);
+        messageInput.addEventListener('click', clearInitialValue);
+
+        function clearInitialValue(event) {
+            const input = event.target;
+            if (input.value === input.placeholder) {
+            input.value = '';
+            }
+        }
+
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Validate form inputs
+            if (!validateInputs()) {
+            return;
+            }
+
+            // Submit the form via email
+            const subject = 'Contact Form Submission';
+            const body = `Name: ${nameInput.value}\nEmail: ${emailInput.value}\nMessage: ${messageInput.value}`;
+            const mailtoUrl = `mailto:ST10027393@vcconnect.edu.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoUrl;
+
+            form.reset();
+        });
+
+        function validateInputs() {
+            // Check if critical fields are empty
+            if (nameInput.value.trim() === '') {
+            alert('Please enter your name.');
+            return false;
+            }
+            return true;
+        }
+
+        const backButton = document.getElementById('back-button');
+
+        backButton.addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
    
 </body>
 </html>
