@@ -101,3 +101,44 @@ h1 {
 .price {
     text-align: center;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 550%;
+        margin-bottom: 35%;
+    }
+
+    /* First Section */
+    .first {
+        display: flex;
+        justify-self: space-between;
+        align-items: center;
+        width: 60%;
+    }
+
+    .first button {
+        margin-top: 10px;
+    }
+
+    /* Heading */
+    h1 {
+        font-size: 36px;
+    }
+
+    /* Third section */
+    .third h2 {
+        font-size: 36px; 
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product-details {
+        width: 100%;
+        margin-right: 0;
+    }
+}
