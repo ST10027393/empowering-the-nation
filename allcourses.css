@@ -121,3 +121,70 @@ h1 {
 .course-info button.booking-button::after {
     margin-left: 5px;
 }
+
+
+/* Media query for screens with a maximum width of 768px (typical for smaller devices like smartphones) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-bottom: 30%;
+        margin-top: 130%;
+    }
+
+    /* First section */
+    .first {
+        flex-direction: row;
+        width: 75%;
+    }
+
+    .first button.back-button {
+        margin-top: 10px;
+    }
+
+    .first h1 {
+        font-size: 36px; /* Reduce font size for smaller screens */
+    }
+
+    /* Adjust styles for the content section */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .course-info {
+        width: 100%; /* Full width for course info */
+    }
+
+    .side1, .side2 {
+        text-align: center; /* Center content within each side */
+    }
+
+    .course-info h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust styles for the booking button */
+    .course-info button.booking-button {
+        margin-top: 20px; /* Add margin to separate the button from the course info */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (typical for very small screens) */
+@media screen and (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .container {
+        width: 100%;
+    }
+
+    .first h1 {
+        font-size: 24px; /* Reduce font size for very small screens */
+    }
+
+    .course-info h2 {
+        font-size: 20px; /* Further reduce font size for very small screens */
+    }
+
+    .course-info li {
+        font-size: 18px; /* Adjust font size for very small screens */
+    }
+}
