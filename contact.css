@@ -169,3 +169,75 @@ h1 {
     font-size: 40px;
 }
 
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 250%;
+        margin-bottom: 30%;
+    }
+
+    /* First section */
+    .first {
+        flex-direction: row;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .first button {
+        margin-top: 10px;
+    }
+
+    /* Heading */
+    .heading {
+        font-size: 36px;
+    }
+
+    /* Contact info */
+    .contact-info {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .info {
+        width: 100%;
+        flex: auto;
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    /* Second section */
+    .second {
+        flex-direction: column;
+    }
+
+    /* Adjust form and map sections */
+    .contact {
+        margin-top: 20px;
+    }
+
+    .contact form {
+        max-width: 100%; /* Full width for the form */
+    }
+
+    .contact label {
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        width: 100%; /* Full width for input fields and textarea */
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+
+    .contact input[type="submit"] {
+        margin-top: 20px; /* Add margin to separate the button from the form */
+    }
+
+    .contact-map {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
