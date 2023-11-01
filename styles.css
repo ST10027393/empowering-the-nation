@@ -8,11 +8,11 @@
 }
 
 :root {
-    --green-color: #185E3F; /* Define your primary color */
-    --grey-color: #545F5B; /* Define your secondary color */
-    --background-color: #fff; /* Define your background color */
-    --brown-color: #8B0000; /* Define your button background color */
-    --secondary-blue: #0057E1; /* Define your button text color */
+    --green-color: #185E3F;
+    --grey-color: #545F5B;
+    --background-color: #fff;
+    --brown-color: #8B0000;
+    --secondary-blue: #0057E1;
   }
 
 html, body {
@@ -47,8 +47,8 @@ body{
 }
 
 a:hover img {
-    transform: scale(1.05); /* Increase the size by 5% */
-    transition: transform 0.2s ease; /* Add a smooth transition effect */
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
 /* Header */
@@ -67,7 +67,7 @@ a:hover img {
 }
 
 .logo img {
-    max-height: 80px; /* Adjust the height as needed */
+    max-height: 80px;
 }
 
 nav ul {
@@ -78,12 +78,12 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px; /* Adjust spacing between links */
+    margin-right: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333; /* Link color */
+    color: #333;
 }
 
 /* styles.css */
@@ -106,12 +106,12 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 10px; /* Adjust spacing between links */
+    margin: 0 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Link color */
+    color: #fff; 
 }
 
 nav a.active {
@@ -123,5 +123,39 @@ nav a:hover{
 }
 
 .copyright {
-    margin-top: 20px; /* Space between navigation links and copyright text */
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Header */
+@media screen and (max-width: 768px) {
+    .fixed-header {
+        padding: 10px 10px;
+    }
+
+    .logo img {
+        max-height: 60px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+}
+
+/* Footer */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
 }
