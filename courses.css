@@ -95,3 +95,10 @@ h1 {
 .six-weeks {
     justify-content: flex-start; /* Align content to the left */
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 80%;
+    }
+}
